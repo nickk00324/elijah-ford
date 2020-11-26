@@ -72,7 +72,6 @@ const Header = () => {
     leave: { opacity: 0 },
   })
 
-  console.log(isHovering)
   return (
     <Container
       onMouseEnter={() => {

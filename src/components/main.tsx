@@ -9,7 +9,7 @@ import Zoom from "./zoom"
 const DragContainer = styled(ScrollContainer)`
   height: 100vh;
   width: 100vw;
-  overflow: scroll;
+  overflow: scroll !important;
 `
 
 type MainProps = {
