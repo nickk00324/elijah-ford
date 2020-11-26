@@ -1,0 +1,21 @@
+/* these are global styles */
+
+html,
+body {
+  margin: 0 auto;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.5s;
+}
+
+a:hover {
+  transition: all 0.5s;
+}
+
+h1 {
+  font-size: 36px;
+}
