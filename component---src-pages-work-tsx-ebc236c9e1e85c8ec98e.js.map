@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/work.tsx"],"names":["Index"],"mappings":"4FAAA,uBAIeA,YAAf","file":"component---src-pages-work-tsx-ebc236c9e1e85c8ec98e.js","sourcesContent":["import Index from \"./index\"\n\n// work will just redirect to index because it's same component\n\nexport default Index\n"],"sourceRoot":""}
