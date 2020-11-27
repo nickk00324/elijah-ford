@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
+import { useTransition, animated as a } from "react-spring"
 import Layout from "./layout"
 import SEO from "./seo"
 import { useDeviceDetect } from "../utils/useDeviceDetect"
@@ -20,7 +21,7 @@ const Container = styled.div`
     margin-top: 150px;
   }
 `
-const Info = styled.div`
+const Info = styled(a.div)`
   .part1 {
     position: fixed;
     top: 450px;
@@ -85,6 +86,12 @@ const WorkView = (props: WorkViewProps) => {
   const [isShowInfo, setIsShowInfo] = useState(false)
   const { isMobile } = useDeviceDetect()
 
+  const transitions = useTransition(isShowInfo, null, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+  })
+
   const pageTitle = slug.split("/")[0].split("-")[0]
 
   return (
@@ -110,17 +117,20 @@ const WorkView = (props: WorkViewProps) => {
             <img src={info} alt="info" className="info-icon" />
           )}
         </MoreInfoButton>
-        {isShowInfo && (
-          <Info>
-            <div className="part1">
-              <p>{title}</p>
-              <p>{medium}</p>
-            </div>
-            <div className="part2">
-              <p>{size}</p>
-              <p>{year}</p>
-            </div>
-          </Info>
+        {transitions.map(
+          ({ item, key, props }) =>
+            item && (
+              <Info style={props} key={key}>
+                <div className="part1">
+                  <p>{title}</p>
+                  <p>{medium}</p>
+                </div>
+                <div className="part2">
+                  <p>{size}</p>
+                  <p>{year}</p>
+                </div>
+              </Info>
+            )
         )}
       </Container>
     </Layout>
