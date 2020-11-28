@@ -34,18 +34,21 @@ const Press = () => {
       <Section>
         <h2>Press Releases</h2>
         <Entry>
-          <h3>BOU. @ Aero Salon</h3>
+          <h3>
+            <em>BOU.</em> @ Aero Salon
+          </h3>
           <p>
             AERO SALON is pleased to present an exhibition of paintings by Los
-            Angeles-based artist, Elijah Ford. In this show, entitled BOU., a
-            formidable population of characters, personages, creatures and
-            things band together and play out and apart in a turbulent pool of
-            fantasy and intricately fictive narrative. People abound in Ford’s
-            images, but certainty regarding their status as human, god, android,
-            alien or cartoon is always in question, always in flux. These are
-            taxonomically variable beings. They emerge in the theater of Ford’s
-            universe, a universe that blurs the lines between what we believe to
-            be real and unreal, between dream and stark wakeful consciousness.{" "}
+            Angeles-based artist, Elijah Ford. In this show, entitled{" "}
+            <em>BOU.</em>, a formidable population of characters, personages,
+            creatures and things band together and play out and apart in a
+            turbulent pool of fantasy and intricately fictive narrative. People
+            abound in Ford’s images, but certainty regarding their status as
+            human, god, android, alien or cartoon is always in question, always
+            in flux. These are taxonomically variable beings. They emerge in the
+            theater of Ford’s universe, a universe that blurs the lines between
+            what we believe to be real and unreal, between dream and stark
+            wakeful consciousness.{" "}
           </p>
           <p>
             A statement from the artist: “I want the viewer to feel the passion
@@ -83,10 +86,13 @@ const Press = () => {
           />
         </Entry>
         <Entry>
-          <h3>Displace @ Nick Kochornswasdi Gallery</h3>
+          <h3>
+            <em>Displace</em> @ Nick Kochornswasdi Gallery
+          </h3>
           <p>
             Nick Kochornswasdi Gallery is pleased to announce its first solo
-            exhibition of the Los Angeles-based artist Elijah Ford. In Displace
+            exhibition of the Los Angeles-based artist Elijah Ford. In{" "}
+            <em>Displace</em>
             the artist begins with the forced deportation of the inhabitants of
             the Chagos Archipelago from 1967 to 1973 by the British government
             in order to accommodate the construction of a U.S. military base and
@@ -120,7 +126,9 @@ const Press = () => {
           </p>
         </Entry>
         <Entry>
-          <h3>Friends on Freeways @ Klinger Studios</h3>
+          <h3>
+            <em>Friends on Freeways</em> @ Klinger Studios
+          </h3>
           <p>
             In the work I attempt to capture the euphoric feeling when spending
             time with beloved ones and relate that to a sublime, seemingly
