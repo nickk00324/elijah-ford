@@ -20,12 +20,12 @@ const Press = () => {
         <Entry>
           <Link fade to="/detroit_winter.pdf">
             <p>
-              “Detroit Winter,” <em>Barbed Magazine</em>, p. 15, 2016
+              “Detroit Winter”, <em>Barbed Magazine</em>, p. 15, 2016
             </p>
           </Link>
           <Link fade to="/detroit_rising.pdf">
             <p>
-              “Detroit Rising: 4 Artist,” <em>Hero Magazine</em>, p.76, Summer
+              “Detroit Rising: 4 Artists”, <em>Hero Magazine</em>, p.76, Summer
               2015
             </p>
           </Link>
